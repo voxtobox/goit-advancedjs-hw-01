@@ -1,0 +1,163 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  color: inherit;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.gallery {
+  max-width: 1200px;
+  margin: 100px auto 0;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.gallery-item {
+  width: 360px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-wrapper {
+  background-color: #2E2F42;
+  color: #FFF;
+}
+
+.gallery-wrapper .sl-close,
+.gallery-wrapper .sl-counter,
+.gallery-wrapper .sl-navigation button
+ {
+    color: #FFF;
+}
+
+.feedback-form {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 28px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  margin-top: 8px;
+  width: 100%;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  height: 40px;
+  padding-left: 10px;
+  transition: all 0.3s;
+}
+
+.feedback-form textarea {
+  padding: 10px;
+  height: 100px;
+}
+
+.feedback-form input:hover,
+.feedback-form input:focus,
+.feedback-form textarea:hover,
+.feedback-form textarea:focus {
+  border: 1px solid #000;
+}
+
+.feedback-form input:active,
+.feedback-form textarea:active {
+  border: 1px solid #808080;
+}
+
+.feedback-form label:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.feedback-form button {
+  font-weight: 500;
+  margin-top: 16px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  max-width: 90px;
+  color: #fff;
+  transition: all 0.3s;
+  outline: transparent;
+}
+
+.feedback-form button:hover,
+.feedback-form button:focus {
+  background-color: #6c8cff;
+  border: 1px solid #6c8cff;
+}
+
+.modal {
+  background-color: white;
+  font-weight: 900;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 300px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-back {
+  padding: 8px;
+}
+
+.link-list {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
